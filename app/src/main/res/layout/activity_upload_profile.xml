@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#AB673AB7"
+    tools:context=".UploadProfileActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/upload_toolbar">
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="300dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_avatar"
+        android:id="@+id/upload_profile_image"
+        android:layout_height="300dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/upload_pick_btn"
+        android:text="Pick Image"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Upload Image"
+        android:layout_gravity="center"
+        android:id="@+id/upload_profile_btn"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+</LinearLayout>

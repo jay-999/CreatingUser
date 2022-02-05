@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CreatingUser</string>
+
+    <string name="username_error">Enter Username name please</string>
+    <string name="email_error">Enter Email</string>
+    <string name="password_error">The password should contain at least 8 characters, including at least one lower case letter, one upper case letter, one number and one punctuation mark</string>
+    <string name="password_mismatch">Password did not match</string>
+
+    <string name="edit_message">Enter a message</string>
+    <string name="button_map">Map</string>
+</resources>

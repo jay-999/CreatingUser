@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#AB673AB7"
+    tools:context=".ProfileActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/profile_toolbar">
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_avatar"
+        android:id="@+id/profile_image"
+        android:layout_height="150dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/profile_change_btn"
+        android:text="@string/change_image"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_firstname"
+            android:text="@string/firstname"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:drawableLeftCompat="@drawable/person">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_lastname"
+            android:text="@string/lastname"
+            android:layout_marginEnd="48dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_username"
+            android:text="@string/username"
+            android:layout_marginEnd="48dp"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_phone"
+            android:text="Phone number"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:drawableLeftCompat="@drawable/phone">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/profile_team"
+            android:text="Team"
+            android:layout_marginEnd="48dp"
+            app:drawableLeftCompat="@drawable/team"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/profile_status"
+        android:text="Hey there I am using FansVerse"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/update_profile"
+        android:layout_gravity="center"
+        android:id="@+id/profile_update_btn"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>
